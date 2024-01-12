@@ -12,13 +12,13 @@
     background: #FF900E;
     color: #FFF;
     font-size: 1.25rem;
-    margin: 20px 0 ;
+    margin: 20px 0;
     font-weight: 600;
     padding: 20px 24px;
     cursor: pointer;
 }
 
-/* header styles */
+/* header styles  start*/
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -47,7 +47,8 @@ nav li a {
     color: #424242;
     text-align: center;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: #FF900E;
 }
 
@@ -56,6 +57,8 @@ nav li a:hover{
     font-weight: 700;
     font-size: 2.8rem;
 }
+
+/* header style end */
 
 /* banner styles */
 .banner-content {
@@ -76,32 +79,78 @@ nav li a:hover{
 }
 
 
-.banner img{
+.banner img {
     width: 100%;
 }
-.btn-primary:hover{
-    color:  #000000;
+
+.btn-primary:hover {
+    color: #000000;
 }
 
+/* banner style end */
 
+/* main style */
+main {
+    max-width: 1440px;
+    margin: auto;
+}
 
+.teams-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.teams-imag-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.teams-details-container {
+    padding-left: 4.5rem;
+}
+
+.quick {
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.our {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-size: 2.8rem;
+font-weight: 700;
+}
+.teams-details{
+    color:  #727272;
+font-weight: 400;
+}
 
 /* responsive style */
 /* for small device */
 @media screen and (max-width:576px) {
-    header{
-        padding: 20px;
+    header {
+        padding: 1.5rem;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
+
 /* for medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 40px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
