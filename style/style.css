@@ -18,6 +18,12 @@
     cursor: pointer;
 }
 
+.section-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
 .text-lightGray {
     color: #727272;
     font-size: 1rem;
@@ -94,8 +100,8 @@ nav li a:hover {
 /* main style */
 main {
     max-width: 1440px;
-    margin:70px auto;
-    
+    margin: 70px auto;
+
 }
 
 .teams-container {
@@ -125,10 +131,38 @@ main {
     font-size: 2.8rem;
     font-weight: 700;
 }
-.features{
+
+.features {
     color: #FF900E;
     font-size: 2.8rem;
-font-weight: 700;
+    font-weight: 700;
+}
+
+/* some facts section */
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:2.8rem ;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-stats {
+    color: #424242;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.card-title{
+    color: #727272;
+font-size: 1.25rem;
+font-weight: 600;
+margin-top: 5px;
 }
 
 
@@ -139,12 +173,16 @@ font-weight: 700;
         padding: 1.5rem;
     }
 
-    nav,.teams-container,.teams-container {
+    nav,
+    .teams-container,
+    .teams-container {
         flex-direction: column;
     }
-    .teams-imag-container{
+
+    .teams-imag-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .teams-details-container {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -157,8 +195,9 @@ font-weight: 700;
         padding: 40px;
     }
 
-    nav,.teams-container{
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    
+
 }
